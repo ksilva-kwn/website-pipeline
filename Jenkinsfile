@@ -18,7 +18,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clona o repositório do Github com o código do site
-                git clone 'https://github.com/ksilva-kwn/website-pipeline.git'
+                git clone https://github.com/ksilva-kwn/website-pipeline.git
             }
         }
       
