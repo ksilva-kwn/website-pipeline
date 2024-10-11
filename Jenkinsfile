@@ -27,8 +27,8 @@ pipeline {
             steps {
                 script {
                     // Constrói a imagem Docker do site
-                    sh 'docker build -t $IMAGE_NAME:$BUILD_ID .'
-                    sh 'docker tag $IMAGE_NAME:$BUILD_ID $IMAGE_NAME:latest'
+                    sh 'docker build -t meusite:$BUILD_ID .'
+                    sh 'docker tag meusite:$BUILD_ID meusite:latest'
                 }
             }
         }
