@@ -1,0 +1,97 @@
+/* Estilo do container do chat */
+#chat-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do cabeçalho do chat */
+#chat-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estilo do corpo do chat */
+#chatbox {
+  height: 300px;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+#chatlogs {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Estilo da entrada e botão */
+#chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+#userInput {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#sendButton {
+  width: 20%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
+
+/* Animação da mensagem */
+.message {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+/* Animação de fade in e movimento para cima */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Efeito de 'digitando' */
+#typing {
+  display: none;
+  font-style: italic;
+  color: #999;
+  animation: blink 1s infinite;
+}
+
+/* Animação de piscar para o efeito de 'digitando' */
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
