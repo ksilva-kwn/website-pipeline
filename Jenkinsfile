@@ -49,7 +49,7 @@ pipeline {
             steps {
                 script {
                     // Conecta via SSH e faz deploy no servidor remoto
-                        ssh $REMOTE_USER@$REMOTE_HOST '
+                        """ ssh $REMOTE_USER@$REMOTE_HOST '
                             docker stop meu_site || true &&
                             docker rm meu_site || true &&
                             docker pull $IMAGE_NAME:latest &&
