@@ -8,9 +8,9 @@ pipeline {
         // As credenciais do Docker Hub configuradas no Jenkins
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
         // Chave SSH configurada no Jenkins para deploy
-        SSH_CREDENTIALS_ID = 'ssh-key-id'
+        SSH_CREDENTIALS_ID = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6WEeSqk0gGjPGGJnPak2nabtSMvdPyWrsDhJDvfohZ9HVELmK3PrcoPNiPxYyiEMYZN9MlfTk1pF6/DQ0wVXMvpMLmMtSifEpcK0WmdyLrduSUvJIv7EFjgjlAZYrKCZESjox229o5dvNSu/JCLgAgZjccrqoqIuYJWWkK0xo/O8qbDt5Q1hotye7sbXNZqElFAwEqBF3FsyrEEP2T2MDz2nVlRJVxlltoyq0/yU/KYdYAg+2nteaP3+gTnyCvTvfyjQm6ZT6tCI9N58ubL4dtKQCedVJuZWrAtKQ6wsZ0BBx2HdWvB31b3bBIcrzkavr7SaaJ3pQUc79MiVttGCUzXgkAoyLE5ayvw7XnqG6ZV4q1jfEFZ4VcTx87E1iRHXSvpSyppUPfA3UJlVF1BYoXZolu+3V0j5f9P586EnD62vVRTQD1+y+FGqxeR9jO0Bf4JxJUR51xjw6ncVzYhdxOtznx96FZdiu0KukUOGYTt4fTB1Zjw+z8kmBvfxVaMs= ubuntu@minekube-teste'
         // Usuário SSH
-        REMOTE_USER = 'root'
+        REMOTE_USER = 'ubuntu'
         // IP ou hostname do servidor onde o container será rodado
         REMOTE_HOST = '144.22.168.42'
     }
