@@ -4,6 +4,7 @@ pipeline {
     environment {
         // Nome da imagem Docker
         IMAGE_NAME = 'kawansilva/meusite'
+        BUILD_ID = 'latest'
         // As credenciais do Docker Hub configuradas no Jenkins
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
         // Chave SSH configurada no Jenkins para deploy
