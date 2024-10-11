@@ -10,7 +10,7 @@ pipeline {
         // Chave SSH configurada no Jenkins para deploy
         SSH_CREDENTIALS_ID = 'ssh-key-id'
         // Usuário SSH
-        REMOTE_USER = 'ubuntu'
+        REMOTE_USER = 'root'
         // IP ou hostname do servidor onde o container será rodado
         REMOTE_HOST = '144.22.168.42'
     }
